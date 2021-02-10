@@ -6,17 +6,6 @@ class Note {
 
   Note();
 
-  // getDate() {
-  //   DateTime now = DateTime.now();
-  //   String ds = now.year.toString() +
-  //       now.month.toString() +
-  //       now.day.toString() +
-  //       now.hour.toString() +
-  //       now.minute.toString() +
-  //       now.second.toString();
-  //   date = int.parse(ds);
-  // }
-
   Note.fromMap(Map<String, dynamic> map) {
     id = map['id'];
     date = map['date'];
