@@ -44,13 +44,11 @@ class DatabaseService {
 
   Future<void> add(Note note) async {
     var database = await db;
-    //note.getDate();
     await database.insert(table, note.toMap());
   }
 
   Future<void> update(Note note) async {
     var database = await db;
-    //note.getDate();
     await database
         .update(table, note.toMap(), where: 'id = ?', whereArgs: [note.id]);
   }
